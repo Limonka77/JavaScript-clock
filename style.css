@@ -1,16 +1,23 @@
 body {
       margin: 0;
       padding: 0;
+      display: -webkit-box;
+      dpisplay: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       height: 100vh;
       background-color: rgb(131, 130, 119);
     }
  .clock-face {
       position: absolute;
       width: 150px;
-      transform: translateY(-3px);
+      -webkit-transform: translateY(-3px);
+              transform: translateY(-3px);
     }
   .clock-face :nth-child(3n) {
     background: red;
@@ -23,7 +30,10 @@ body {
       background:black;
       position: absolute;
       top:50%;
-      transform-origin: 100%;
+      -webkit-transform-origin: 100%;
+              transform-origin: 100%;
+      -webkit-transition: all 0.05s;
       transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+              transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
