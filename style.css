@@ -1,0 +1,29 @@
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: rgb(131, 130, 119);
+    }
+ .clock-face {
+      position: absolute;
+      width: 150px;
+      transform: translateY(-3px);
+    }
+  .clock-face :nth-child(3n) {
+    background: red;
+  }
+
+
+    .clock {
+      width:50%;
+      height:6px;
+      background:black;
+      position: absolute;
+      top:50%;
+      transform-origin: 100%;
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
